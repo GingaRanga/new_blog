@@ -1,5 +1,7 @@
+/* VARIABLES */
+/* MIXINS */
 /* BROWSER RESET */
-/* line 3, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 85, /Users/evanmarshall/new-blog/sass/main.sass */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,115 +20,143 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+    vertical-align-height: 100%;
+    vertical-align-width: 100%; }
 
-/* line 23, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 107, /Users/evanmarshall/new-blog/sass/main.sass */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 27, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 111, /Users/evanmarshall/new-blog/sass/main.sass */
 body {
-  line-height: 1.2; }
+  background-color: #e9ece5;
+  padding-bottom: 40px;
+  font-family: Helvetica, Arial, sans-serif; }
 
-/* line 30, /Users/evanmarshall/new-blog/sass/main.sass */
-ol, ul {
-  list-style: none; }
-
-/* line 33, /Users/evanmarshall/new-blog/sass/main.sass */
-a {
-  text-decoration: none; }
-
-/* line 36, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 116, /Users/evanmarshall/new-blog/sass/main.sass */
 p {
-  font-size: 1.2em; }
+  font-size: 1.1em; }
 
-/* line 39, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 119, /Users/evanmarshall/new-blog/sass/main.sass */
 blockquote, q {
   quotes: none; }
 
-/* line 42, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 122, /Users/evanmarshall/new-blog/sass/main.sass */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 47, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 127, /Users/evanmarshall/new-blog/sass/main.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* VARIABLES */
-/* horiz, vert, blur, color */
-/* MIXINS */
+/* line 131, /Users/evanmarshall/new-blog/sass/main.sass */
+ol, ul {
+  list-style: none; }
+
+/* line 134, /Users/evanmarshall/new-blog/sass/main.sass */
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer; }
+
 /* MAIN STYLES */
-/* line 96, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 141, /Users/evanmarshall/new-blog/sass/main.sass */
 h1 {
   font-size: 3.6em; }
 
-/* line 99, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 144, /Users/evanmarshall/new-blog/sass/main.sass */
 h2 {
   font-size: 1.6em; }
 
-/* line 79, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 70, /Users/evanmarshall/new-blog/sass/main.sass */
 nav:after, header:after, main:after, article:after, aside:after, section:after, footer:after {
   content: "";
   display: table;
   clear: both; }
 
 /* NAV */
-/* line 107, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 152, /Users/evanmarshall/new-blog/sass/main.sass */
 nav {
+  /* to center content in middle of div just make the line height the same as the height of div */
   position: fixed;
   z-index: 2;
   width: 100%;
-  font-family: Arial, sans-serif; }
+  font-family: Arial, sans-serif;
+  text-transform: lowercase; }
 
-/* line 113, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 160, /Users/evanmarshall/new-blog/sass/main.sass */
 #brand {
   float: left;
   margin: 10px 0 0 10px;
-  width: 64px;
-  height: 69px;
-  background-image: url(../img/brand.svg);
-  background-size: 100%; }
+  cursor: pointer; }
 
-/* line 121, /Users/evanmarshall/new-blog/sass/main.sass */
-nav ul li {
-  display: inline-block;
+/* line 165, /Users/evanmarshall/new-blog/sass/main.sass */
+#brand:hover {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/* line 169, /Users/evanmarshall/new-blog/sass/main.sass */
+.main-nav:link, .main-nav:visited {
   padding: 0 10px;
   float: right;
   letter-spacing: -1.5px;
   word-spacing: -2px;
-  line-height: 69px; }
-
-/* line 129, /Users/evanmarshall/new-blog/sass/main.sass */
-nav ul li a:link, nav ul li a:visited {
-  color: #fff;
+  line-height: 69px;
   font-size: 1.8em;
   text-shadow: 1px 1px 1px #3b3a36; }
 
-/* line 134, /Users/evanmarshall/new-blog/sass/main.sass */
-nav ul li a:hover {
+/* line 178, /Users/evanmarshall/new-blog/sass/main.sass */
+.main-nav:hover {
   color: #3b3a36;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-shadow: none;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-fuction: ease-in-out;
+  -moz-transition-timing-fuction: ease-in-out;
+  -ms-transition-timing-fuction: ease-in-out;
+  -o-transition-timing-fuction: ease-in-out;
+  transition-timing-fuction: ease-in-out; }
+
+/* line 185, /Users/evanmarshall/new-blog/sass/main.sass */
+.main-nav:active {
+  color: #c0dfd9;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  text-shadow: 1px 1px 1px #3b3a36; }
 
 /* HERO */
-/* line 140, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 193, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero {
   height: 100vh;
   max-width: 100%;
   background-image: url(../img/hero.svg);
-  background-position: 25% 40%;
   background-color: #c0dfd9;
+  background-position: 25% 40%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
 
-/* line 146, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 199, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero-text {
   width: 25%;
   position: relative;
@@ -135,24 +165,52 @@ nav ul li a:hover {
   color: #fff;
   text-shadow: 1px 1px 1px #3b3a36; }
 
-/* line 154, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 207, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero h1 {
+  /*background-size 100% contains larger images inside width and height */
   width: 342px;
   height: 69px;
   background-image: url(../img/brand_text.svg);
   background-size: 100%;
   text-indent: -9999px; }
 
-/* line 161, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 215, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero p {
   font-family: Arial, sans-serif; }
 
 /* MAIN */
+/* line 220, /Users/evanmarshall/new-blog/sass/main.sass */
+#intro {
+  color: #3b3a36;
+  padding: 50px 20px; }
+
+/* line 224, /Users/evanmarshall/new-blog/sass/main.sass */
+#intro h2 {
+  text-align: center;
+  padding: 20px 0; }
+
+/* line 228, /Users/evanmarshall/new-blog/sass/main.sass */
+#intro p {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  -o-column-gap: 40px;
+  column-gap: 40px;
+  -webkit-column-rule: 1px solid #b3c2bf;
+  -moz-column-rule: 1px solid #b3c2bf;
+  -o-column-rule: 1px solid #b3c2bf;
+  column-rule: 1px solid #b3c2bf; }
+
 /* ARTICLE */
 /* CONTACT */
 /* FOOTER */
-/* line 172, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 237, /Users/evanmarshall/new-blog/sass/main.sass */
 footer {
+  color: #e9ece5;
+  /* have to specify width because fixed position shortens width */
   z-index: 2;
   position: fixed;
   bottom: 0;
@@ -160,12 +218,9 @@ footer {
   background-color: #3b3a36;
   padding: 20px; }
 
-/* line 180, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 247, /Users/evanmarshall/new-blog/sass/main.sass */
 footer nav ul li {
+  text-transform: capitalize;
   display: inline-block; }
-
-/* line 183, /Users/evanmarshall/new-blog/sass/main.sass */
-body {
-  padding-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,85 @@
+/* VARIABLES */
+
+$primary-font: Helvetica, Arial, sans-serif
+
+$dark-color: #3b3a36
+
+$grey-color: #b3c2bf
+
+$light-color: #e9ece5
+
+$green-color: #c0dfd9
+
+$primary-fade: rgba(192, 223, 217,.9)
+
+$dark-shadow: 1px 1px 1px #3b3a36
+
+$light-shadow: 1px 1px 1px #e9ece5
+
+/* MIXINS */
+
+=transformScale
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+
+=transTime($timing)
+    -webkit-transition-timing-fuction: $timing
+    -moz-transition-timing-fuction: $timing
+    -ms-transition-timing-fuction: $timing
+    -o-transition-timing-fuction: $timing
+    transition-timing-fuction: $timing
+
+=transition($name, $duration)
+    -webkit-transition: $name $duration
+    -o-transition: $name $duration
+    transition: $name $duration
+
+=columns($col, $gap, $width, $style, $color)
+    -webkit-column-count: $col
+    -moz-column-count: $col
+    -o-column-count: $col
+    column-count: $col
+    -webkit-column-gap: $gap
+    -moz-column-gap: $gap
+    -o-column-gap: $gap
+    column-gap: $gap
+    -webkit-column-rule: $width $style $color
+    -moz-column-rule: $width $style $color
+    -o-column-rule: $width $style $color
+    column-rule: $width $style $color
+
+=bShadowDark
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) /* horiz, vert, blur, spread, color */
+    
+=bShadowLite
+    -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19)
+
+=borderRad($rad)
+    -webkit-border-radius: $rad
+    -moz-border-radius: $rad
+    -ms-border-radius: $rad
+    -o-border-radius: $rad
+    border-radius: $rad
+
+=clearfix
+    &:after
+        content: ""
+        display: table
+        clear: both
+
+=bgImage ($bgPos, $bgAttach, $bgRepeat, $bgSize)
+    background-color: $green-color
+    background-position: $bgPos
+    background-attachment: $bgAttach
+    background-repeat: $bgRepeat
+    -webkit-background-size: $bgSize
+    background-size: $bgSize
+
 /* BROWSER RESET */
 
 html, body, div, span, applet, object, iframe,
@@ -19,22 +101,20 @@ time, mark, audio, video
 	font-size: 100%
 	font: inherit
 	vertical-align: baseline
+    height: 100%
+    width: 100%
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
 	display: block
 
 body 
-	line-height: 1.2
-
-ol, ul 
-	list-style: none
-
-a
-    text-decoration: none
-    
+    background-color: $light-color
+    padding-bottom: 40px 
+    font-family: $primary-font
+   
 p
-    font-size: 1.2em
+    font-size: 1.1em
 
 blockquote, q 
 	quotes: none
@@ -48,48 +128,13 @@ table
 	border-collapse: collapse
 	border-spacing: 0
 
-/* VARIABLES */
+ol, ul
+    list-style: none
 
-$primary-font: Helvetica, Arial, sans-serif
-
-$dark-color: #3b3a36
-
-$grey-color: #b3c2bf
-
-$light-color: #e9ece5
-
-$green-color: #c0dfd9
-
-$primary-fade: rgba(192, 223, 217,.9)
-
-$dark-shadow: 1px 1px 1px #3b3a36 /* horiz, vert, blur, color */
-
-$light-shadow: 1px 1px 1px #e9ece5
-
-/* MIXINS */
-
-=borderRad($rad)
-    -webkit-border-radius: $rad
-    -moz-border-radius: $rad
-    -ms-border-radius: $rad
-    -o-border-radius: $rad
-    border-radius: $rad
-
-=clearfix
-    &:after
-        content: ""
-        display: table
-        clear: both
-
-=bgImage
-    background-position: 25% 40%
-    background-color: $green-color
-    background-attachment: fixed
-    background-repeat: no-repeat
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
+a
+    text-decoration: none
+    color: #fff
+    cursor: pointer
 
 /* MAIN STYLES */
 
@@ -105,35 +150,43 @@ nav, header, main, article, aside, section, footer
 /* NAV */
 
 nav
-    position: fixed /* to center content in middle of div just make the line height the same as the height of div */
+    /* to center content in middle of div just make the line height the same as the height of div */
+    position: fixed 
     z-index: 2
     width: 100%
     font-family: Arial, sans-serif
+    text-transform: lowercase
     
 #brand
     float: left
     margin: 10px 0 0 10px
-    width: 64px
-    height: 69px
-    background-image: url(../img/brand.svg)
-    background-size: 100%
+    cursor: pointer
+      
+#brand:hover
+    +transformScale
+    +transition(all, 0.5s)
 
-nav ul li
-    display: inline-block
+.main-nav:link, .main-nav:visited
     padding: 0 10px
     float: right
     letter-spacing: -1.5px
     word-spacing: -2px
     line-height: 69px
-
-nav ul li a:link, nav ul li a:visited
-    color: #fff
     font-size: 1.8em
     text-shadow: $dark-shadow
     
-nav ul li a:hover
+.main-nav:hover
     color: $dark-color
     text-decoration: underline
+    text-shadow: none
+    +transition(all, 1s)
+    +transTime(ease-in-out)
+        
+.main-nav:active
+    color: $green-color
+    +transformScale 
+    +transition(all, 0.1s)
+    text-shadow: $dark-shadow
 
 /* HERO */
 
@@ -141,7 +194,7 @@ nav ul li a:hover
     height: 100vh
     max-width: 100%
     background-image: url(../img/hero.svg)
-    +bgImage
+    +bgImage(25% 40%, fixed, no-repeat, cover)
     
 #hero-text
     width: 25%
@@ -152,16 +205,28 @@ nav ul li a:hover
     text-shadow: $dark-shadow
     
 #hero h1
+    /*background-size 100% contains larger images inside width and height */
     width: 342px
     height: 69px
     background-image: url(../img/brand_text.svg)
-    background-size: 100% /* contains larger images inside width and height */
+    background-size: 100%
     text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
     
 #hero p
     font-family: Arial, sans-serif
     
 /* MAIN */
+
+#intro
+    color: $dark-color
+    padding: 50px 20px
+
+#intro h2
+    text-align: center
+    padding: 20px 0
+
+#intro p
+    +columns(3, 40px, 1px, solid, $grey-color)
 
 /* ARTICLE */
 
@@ -170,15 +235,15 @@ nav ul li a:hover
 /* FOOTER */
 
 footer
+    color: $light-color
+    /* have to specify width because fixed position shortens width */
     z-index: 2
     position: fixed
     bottom: 0
-    width: 100% /* have to specify because fixed position shortens width */
+    width: 100%
     background-color: $dark-color
     padding: 20px
     
 footer nav ul li
-    display: inline-block
-    
-body
-    padding-bottom: 40px
+    text-transform: capitalize 
+    display: inline-block 
