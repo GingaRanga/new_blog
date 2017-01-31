@@ -1,0 +1,171 @@
+/* BROWSER RESET */
+/* line 3, /Users/evanmarshall/new-blog/sass/main.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 23, /Users/evanmarshall/new-blog/sass/main.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 27, /Users/evanmarshall/new-blog/sass/main.sass */
+body {
+  line-height: 1.2; }
+
+/* line 30, /Users/evanmarshall/new-blog/sass/main.sass */
+ol, ul {
+  list-style: none; }
+
+/* line 33, /Users/evanmarshall/new-blog/sass/main.sass */
+a {
+  text-decoration: none; }
+
+/* line 36, /Users/evanmarshall/new-blog/sass/main.sass */
+p {
+  font-size: 1.2em; }
+
+/* line 39, /Users/evanmarshall/new-blog/sass/main.sass */
+blockquote, q {
+  quotes: none; }
+
+/* line 42, /Users/evanmarshall/new-blog/sass/main.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 47, /Users/evanmarshall/new-blog/sass/main.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* VARIABLES */
+/* horiz, vert, blur, color */
+/* MIXINS */
+/* MAIN STYLES */
+/* line 96, /Users/evanmarshall/new-blog/sass/main.sass */
+h1 {
+  font-size: 3.6em; }
+
+/* line 99, /Users/evanmarshall/new-blog/sass/main.sass */
+h2 {
+  font-size: 1.6em; }
+
+/* line 79, /Users/evanmarshall/new-blog/sass/main.sass */
+nav:after, header:after, main:after, article:after, aside:after, section:after, footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* NAV */
+/* line 107, /Users/evanmarshall/new-blog/sass/main.sass */
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  font-family: Arial, sans-serif; }
+
+/* line 113, /Users/evanmarshall/new-blog/sass/main.sass */
+#brand {
+  float: left;
+  margin: 10px 0 0 10px;
+  width: 64px;
+  height: 69px;
+  background-image: url(../img/brand.svg);
+  background-size: 100%; }
+
+/* line 121, /Users/evanmarshall/new-blog/sass/main.sass */
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  float: right;
+  letter-spacing: -1.5px;
+  word-spacing: -2px;
+  line-height: 69px; }
+
+/* line 129, /Users/evanmarshall/new-blog/sass/main.sass */
+nav ul li a:link, nav ul li a:visited {
+  color: #fff;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 1px #3b3a36; }
+
+/* line 134, /Users/evanmarshall/new-blog/sass/main.sass */
+nav ul li a:hover {
+  color: #3b3a36;
+  text-decoration: underline; }
+
+/* HERO */
+/* line 140, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url(../img/hero.svg);
+  background-position: 25% 40%;
+  background-color: #c0dfd9;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 146, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-text {
+  width: 25%;
+  position: relative;
+  right: -65%;
+  top: 50%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #3b3a36; }
+
+/* line 154, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero h1 {
+  width: 342px;
+  height: 69px;
+  background-image: url(../img/brand_text.svg);
+  background-size: 100%;
+  text-indent: -9999px; }
+
+/* line 161, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero p {
+  font-family: Arial, sans-serif; }
+
+/* MAIN */
+/* ARTICLE */
+/* CONTACT */
+/* FOOTER */
+/* line 172, /Users/evanmarshall/new-blog/sass/main.sass */
+footer {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #3b3a36;
+  padding: 20px; }
+
+/* line 180, /Users/evanmarshall/new-blog/sass/main.sass */
+footer nav ul li {
+  display: inline-block; }
+
+/* line 183, /Users/evanmarshall/new-blog/sass/main.sass */
+body {
+  padding-bottom: 40px; }
+
+/*# sourceMappingURL=main.css.map */

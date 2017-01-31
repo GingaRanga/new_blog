@@ -1,0 +1,184 @@
+/* BROWSER RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+	display: block
+
+body 
+	line-height: 1.2
+
+ol, ul 
+	list-style: none
+
+a
+    text-decoration: none
+    
+p
+    font-size: 1.2em
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+/* VARIABLES */
+
+$primary-font: Helvetica, Arial, sans-serif
+
+$dark-color: #3b3a36
+
+$grey-color: #b3c2bf
+
+$light-color: #e9ece5
+
+$green-color: #c0dfd9
+
+$primary-fade: rgba(192, 223, 217,.9)
+
+$dark-shadow: 1px 1px 1px #3b3a36 /* horiz, vert, blur, color */
+
+$light-shadow: 1px 1px 1px #e9ece5
+
+/* MIXINS */
+
+=borderRad($rad)
+    -webkit-border-radius: $rad
+    -moz-border-radius: $rad
+    -ms-border-radius: $rad
+    -o-border-radius: $rad
+    border-radius: $rad
+
+=clearfix
+    &:after
+        content: ""
+        display: table
+        clear: both
+
+=bgImage
+    background-position: 25% 40%
+    background-color: $green-color
+    background-attachment: fixed
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+
+/* MAIN STYLES */
+
+h1
+    font-size: 3.6em
+    
+h2
+    font-size: 1.6em
+    
+nav, header, main, article, aside, section, footer
+    +clearfix 
+
+/* NAV */
+
+nav
+    position: fixed /* to center content in middle of div just make the line height the same as the height of div */
+    z-index: 2
+    width: 100%
+    font-family: Arial, sans-serif
+    
+#brand
+    float: left
+    margin: 10px 0 0 10px
+    width: 64px
+    height: 69px
+    background-image: url(../img/brand.svg)
+    background-size: 100%
+
+nav ul li
+    display: inline-block
+    padding: 0 10px
+    float: right
+    letter-spacing: -1.5px
+    word-spacing: -2px
+    line-height: 69px
+
+nav ul li a:link, nav ul li a:visited
+    color: #fff
+    font-size: 1.8em
+    text-shadow: $dark-shadow
+    
+nav ul li a:hover
+    color: $dark-color
+    text-decoration: underline
+
+/* HERO */
+
+#hero
+    height: 100vh
+    max-width: 100%
+    background-image: url(../img/hero.svg)
+    +bgImage
+    
+#hero-text
+    width: 25%
+    position: relative
+    right: -65%
+    top: 50%
+    color: #fff
+    text-shadow: $dark-shadow
+    
+#hero h1
+    width: 342px
+    height: 69px
+    background-image: url(../img/brand_text.svg)
+    background-size: 100% /* contains larger images inside width and height */
+    text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
+    
+#hero p
+    font-family: Arial, sans-serif
+    
+/* MAIN */
+
+/* ARTICLE */
+
+/* CONTACT */
+
+/* FOOTER */
+
+footer
+    z-index: 2
+    position: fixed
+    bottom: 0
+    width: 100% /* have to specify because fixed position shortens width */
+    background-color: $dark-color
+    padding: 20px
+    
+footer nav ul li
+    display: inline-block
+    
+body
+    padding-bottom: 40px
