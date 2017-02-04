@@ -26,6 +26,7 @@
     
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!-- INSERT CUSTOM AMP ADD_ON SCRIPTS -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     
@@ -60,11 +61,245 @@
         I'm blunt, extremely sarcastic, ridiculous, and I have very strong opinions on how you should raise a child, even though I've only been a parent for 4 months (I have strong opinions on a lot of things... I'm an ass...). I encourage open debates, as long as you can handle my rebuttals. I am also not afraid to test my theories over the next 18 years as my sweet, beautiful, heart-pinching baby girl grows up in some of the most challenging times. I'm sure I'll even be wrong sometimes, however unlikely that might be.
         I hope you will enjoy my journey of parenthood and husband-hood. I know I'm looking forward to it!!</p>
     </main>
-    <article>
+    <article id="posts"> 
         <h2>Blog Posts</h2>
-        <section id="posts">
-            
-        </section>
+        <amp-carousel layout="flex-item" max-width="100%" height="500" type="slides">
+            <div class="flex-container">
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/announcement.jpg" max-width="100%" height="180" noloading alt="ultrasound picture"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Shit, I'm Pregnant</h3> 
+                            <em><h4>March 20th 2016</h4></em>
+                            <hr>
+                        </div>  
+                        <p class="thumb-content">
+                        It's early April of 2015. My wife Katie and I are on one of our leisurely drives around town looking at random houses while dreaming, critiquing, and scoffing at the sites...</p>  
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/watermelon.jpg" max-width="100%" height="180" noloading alt="picture of watermelon"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>The Watermelon Incident</h3> 
+                            <em><h4>March 28th 2016</h4></em>
+                            <hr>
+                        </div> 
+                        <p class="thumb-content">
+                        Nine months of: "You'll want to pull your hair out!" Nine months of: "Crazy mood swings and cravings." When...</p> 
+                        <a class="post-button" href="#">Read More...</a>   
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/peanut.jpg" max-width="100%" height="180" noloading alt="Bundled up Isla"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Dr. Sloth</h3> 
+                            <em><h4>April 5th, 2016</h4></em>
+                            <hr>
+                        </div>
+                        <p class="thumb-content">
+                        Let's recap: We had an awkward butt wiping, we had a Halloween-long-John reception, we had watermelons flying and a peanut butter burgers feast. Now...</p>   
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>  
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/bomb-1.jpg" max-width="100%" height="180" noloading alt="Isla and Daddy cuddling"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>The Bomb Drop: Part I</h3> 
+                            <em><h4>April 11th, 2016</h4></em>
+                            <hr>
+                        </div>  
+                        <p class="thumb-content">
+                        So here we are. It is Monday April 11th (5 days before Katie's 28th birthday. Had to say that in this post as she never remembers her age and it is scary). It will be Isla's third...</p>  
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/bomb-2.jpg" max-width="100%" height="180" noloading alt="Isla discovering mobile"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>The Bomb Drop: Part II</h3> 
+                            <em><h4>April 19th, 2016</h4></em>
+                            <hr>
+                        </div> 
+                        <p class="thumb-content">
+                        The nail-biting day had arrived. The day we were to find out if our precious little peanut was just messing with us or about to change our lives. We had packed for about...</p> 
+                        <a class="post-button" href="#">Read More...</a>   
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/tough.jpg" max-width="100%" height="180" noloading alt="Isla surrounded by presents"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                    <div class="thumb-title">
+                        <h3>Tough Cookie</h3> 
+                        <em><h4>April 26th 2016</h4></em>
+                        <hr>
+                    </div>  
+                    <p class="thumb-content">
+                    Our first week started out with a bang. Katie and I had come to terms with the fact that Isla most likely had Biliary Atresia, but...</p>  
+                    <a class="post-button" href="#">Read More...</a> 
+                </div>   
+                </div>  
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/santa.jpg" max-width="100%" height="180" noloading alt="Family picture with Santa"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>The Fallout</h3> 
+                            <em><h4>May 3rd, 2016</h4></em>
+                            <hr>
+                        </div>
+                        <p class="thumb-content">
+                        We all survived the surgery. Isla had about a week of recovery on the surgical unit of the IWK Hospital. The rooms on this unit were much bigger. I'd say they were the Hilton to the Holiday Inn of the Paediatric unit...</p>   
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/car-seat.jpg" max-width="100%" height="180" noloading alt="Isla in car seat"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Bumps in the Road</h3> 
+                            <em><h4>June 7th, 2016</h4></em>
+                            <hr>
+                        </div> 
+                        <p class="thumb-content">
+                        Who said parenting was hard? That person is nuts! Just kidding, parenting can be tough, but...</p> 
+                        <a class="post-button" href="#">Read More...</a>   
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/pooface.jpg" max-width="100%" height="180" noloading alt="Isla making poop face"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Gunsling N Giggles</h3> 
+                            <em><h4>June 22nd, 2016</h4></em>
+                            <hr>
+                        </div>
+                        <p class="thumb-content">
+                        It's always interesting how much entertainment a child adds to your life. Life, pre-family, has the tendency to become monotonous at times...</p>   
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>  
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/yellow.jpg" max-width="100%" height="180" noloading alt="Closeup of Isla's jaundice"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Yellow Baby</h3> 
+                            <em><h4>August 17th, 2016</h4></em>
+                            <hr>
+                        </div>  
+                        <p class="thumb-content">
+                        We arrived at the six month mark in May. Our confidence in parenting and routine had increased ten fold...</p>  
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/tx.jpg" max-width="100%" height="180" noloading alt="Daddy holding Isla close"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Let's Talk About Tx</h3> 
+                            <em><h4>September 6th, 2016</h4></em>
+                            <hr>
+                        </div> 
+                        <p class="thumb-content">
+                        In April we went to our routine monthly GI Clinic visit. I say monthly, however...</p> 
+                        <a class="post-button" href="#">Read More...</a>   
+                    </div>   
+                </div>
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/plane.jpg" max-width="100%" height="180" noloading alt="Isla looking out plane window"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Summer in the Six: Part I</h3> 
+                            <em><h4>September 19th, 2016</h4></em>
+                            <hr>
+                        </div>
+                        <p class="thumb-content">
+                        It was time. Isla, Katie, and my first big trip to the big city. Pediatric Liver transplants are not performed in the Atlantic provinces so all of us crazy...</p>   
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>  
+            </div>
+            <div class="flex-container">
+                <div class="flex-item"> 
+                    <div class="thumb-image">
+                        <amp-img src="img/beads.jpg" max-width="100%" height="180" noloading alt="Isla holding bravery beads"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Summer in the Six: Part II</h3> 
+                            <em><h4>October 2nd, 2016</h4></em>
+                            <hr>
+                        </div>  
+                        <p class="thumb-content">
+                        Katie was approved to save Isla’s life! Wow, what an important call and what an amazing healthcare system we have. Isla’s and Katie’s...</p>  
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/johnny.jpg" max-width="100%" height="180" noloading alt="Isla in Johnny gown"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Summer in the Six: Part III</h3> 
+                            <em><h4>October 16th, 2016</h4></em>
+                            <hr>
+                        </div> 
+                        <p class="thumb-content">
+                        Isla was on her way to surgery and I had gained a modest sense of relief knowing that she would be given some good drugs to ease her pain. The next time I would see her...</p> 
+                        <a class="post-button" href="#">Read More...</a>   
+                    </div>   
+                </div>
+                <div class="flex-item">
+                    <div class="thumb-image">
+                        <amp-img src="img/cn.jpg" max-width="100%" height="180" noloading alt="Mom and isla in front of CN Tower"></amp-img>
+                    </div> 
+                    <div class="thumb-footer">
+                        <div class="thumb-title">
+                            <h3>Road to Recovery</h3> 
+                            <em><h4>October 23rd, 2016</h4></em>
+                            <hr>
+                        </div>
+                        <p class="thumb-content">
+                        Over our two trips to Toronto we were at about one month spent away from home. The transplant doctors had advised us that recovery could take anywhere from 3 to 12 months, but...</p>   
+                        <a class="post-button" href="#">Read More...</a> 
+                    </div>   
+                </div>  
+            </div>                
+        </amp-carousel>
     </article>
     <section id="contact">
         <form>

@@ -1,7 +1,7 @@
 /* VARIABLES */
 /* MIXINS */
 /* BROWSER RESET */
-/* line 85, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 82, /Users/evanmarshall/new-blog/sass/main.sass */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,20 +24,24 @@ time, mark, audio, video {
     vertical-align-height: 100%;
     vertical-align-width: 100%; }
 
-/* line 107, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 104, /Users/evanmarshall/new-blog/sass/main.sass */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 111, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 108, /Users/evanmarshall/new-blog/sass/main.sass */
 body {
   background-color: #e9ece5;
   padding-bottom: 40px;
   font-family: Helvetica, Arial, sans-serif; }
 
-/* line 116, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 113, /Users/evanmarshall/new-blog/sass/main.sass */
 p {
   font-size: 1.1em; }
+
+/* line 116, /Users/evanmarshall/new-blog/sass/main.sass */
+em {
+  font-style: italic; }
 
 /* line 119, /Users/evanmarshall/new-blog/sass/main.sass */
 blockquote, q {
@@ -73,14 +77,19 @@ h1 {
 h2 {
   font-size: 1.6em; }
 
-/* line 70, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 147, /Users/evanmarshall/new-blog/sass/main.sass */
+h3 {
+  font-weight: bolder;
+  font-size: 1.2em; }
+
+/* line 67, /Users/evanmarshall/new-blog/sass/main.sass */
 nav:after, header:after, main:after, article:after, aside:after, section:after, footer:after {
   content: "";
   display: table;
   clear: both; }
 
 /* NAV */
-/* line 152, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 156, /Users/evanmarshall/new-blog/sass/main.sass */
 nav {
   /* to center content in middle of div just make the line height the same as the height of div */
   position: fixed;
@@ -89,13 +98,13 @@ nav {
   font-family: Arial, sans-serif;
   text-transform: lowercase; }
 
-/* line 160, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 164, /Users/evanmarshall/new-blog/sass/main.sass */
 #brand {
   float: left;
   margin: 10px 0 0 10px;
   cursor: pointer; }
 
-/* line 165, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 169, /Users/evanmarshall/new-blog/sass/main.sass */
 #brand:hover {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -106,7 +115,7 @@ nav {
   -o-transition: all 0.5s;
   transition: all 0.5s; }
 
-/* line 169, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 173, /Users/evanmarshall/new-blog/sass/main.sass */
 .main-nav:link, .main-nav:visited {
   padding: 0 10px;
   float: right;
@@ -116,7 +125,7 @@ nav {
   font-size: 1.8em;
   text-shadow: 1px 1px 1px #3b3a36; }
 
-/* line 178, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 182, /Users/evanmarshall/new-blog/sass/main.sass */
 .main-nav:hover {
   color: #3b3a36;
   text-decoration: underline;
@@ -130,7 +139,7 @@ nav {
   -o-transition-timing-fuction: ease-in-out;
   transition-timing-fuction: ease-in-out; }
 
-/* line 185, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 189, /Users/evanmarshall/new-blog/sass/main.sass */
 .main-nav:active {
   color: #c0dfd9;
   -webkit-transform: scale(0.8);
@@ -144,7 +153,7 @@ nav {
   text-shadow: 1px 1px 1px #3b3a36; }
 
 /* HERO */
-/* line 193, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 197, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero {
   height: 100vh;
   max-width: 100%;
@@ -156,7 +165,7 @@ nav {
   -webkit-background-size: cover;
   background-size: cover; }
 
-/* line 199, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 203, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero-text {
   width: 25%;
   position: relative;
@@ -165,7 +174,7 @@ nav {
   color: #fff;
   text-shadow: 1px 1px 1px #3b3a36; }
 
-/* line 207, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 211, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero h1 {
   /*background-size 100% contains larger images inside width and height */
   width: 342px;
@@ -174,22 +183,22 @@ nav {
   background-size: 100%;
   text-indent: -9999px; }
 
-/* line 215, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 219, /Users/evanmarshall/new-blog/sass/main.sass */
 #hero p {
   font-family: Arial, sans-serif; }
 
 /* MAIN */
-/* line 220, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 224, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro {
   color: #3b3a36;
   padding: 50px 20px; }
 
-/* line 224, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 228, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro h2 {
   text-align: center;
   padding: 20px 0; }
 
-/* line 228, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 232, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro p {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -205,9 +214,107 @@ nav {
   column-rule: 1px solid #b3c2bf; }
 
 /* ARTICLE */
+/* line 237, /Users/evanmarshall/new-blog/sass/main.sass */
+#posts {
+  background-color: #3b3a36;
+  padding: 50px 20px; }
+
+/* line 241, /Users/evanmarshall/new-blog/sass/main.sass */
+#posts h2 {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff; }
+
+/* line 246, /Users/evanmarshall/new-blog/sass/main.sass */
+.flex-container {
+  -webkit-display: inline-flex;
+  -moz-display: inline-flex;
+  -ms-display: inline-flex;
+  -o-display: inline-flex;
+  display: inline-flex;
+  margin: 0 auto;
+  max-width: 1150px; }
+
+/* line 255, /Users/evanmarshall/new-blog/sass/main.sass */
+.flex-item {
+  background-color: #e9ece5;
+  width: 100%;
+  margin: 1%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #3b3a36;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+/* line 263, /Users/evanmarshall/new-blog/sass/main.sass */
+.thumb-image {
+  max-width: 100%;
+  margin: 1%; }
+
+/* line 267, /Users/evanmarshall/new-blog/sass/main.sass */
+.thumb-footer {
+  padding: 10px; }
+
+/* line 270, /Users/evanmarshall/new-blog/sass/main.sass */
+.thumb-title {
+  margin: 20px 0 10px; }
+
+/* line 273, /Users/evanmarshall/new-blog/sass/main.sass */
+.thumb-content {
+  margin-bottom: 20px; }
+
+/* line 276, /Users/evanmarshall/new-blog/sass/main.sass */
+.post-button:link, .post-button:visited {
+  color: #3b3a36;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background-color: #c0dfd9;
+  border: 1px solid rgba(59, 58, 54, 0.5);
+  display: inline-block;
+  position: absolute;
+  bottom: 20px; }
+
+/* line 288, /Users/evanmarshall/new-blog/sass/main.sass */
+.post-button:hover {
+  color: #e9ece5;
+  background-color: #3b3a36;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-fuction: ease-in-out;
+  -moz-transition-timing-fuction: ease-in-out;
+  -ms-transition-timing-fuction: ease-in-out;
+  -o-transition-timing-fuction: ease-in-out;
+  transition-timing-fuction: ease-in-out; }
+
+/* line 294, /Users/evanmarshall/new-blog/sass/main.sass */
+.post-button:active {
+  color: #fff;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s; }
+
+/* line 299, /Users/evanmarshall/new-blog/sass/main.sass */
+.thumb-footer h3 {
+  margin: 20px 0 10px; }
+
 /* CONTACT */
 /* FOOTER */
-/* line 237, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 306, /Users/evanmarshall/new-blog/sass/main.sass */
 footer {
   color: #e9ece5;
   /* have to specify width because fixed position shortens width */
@@ -218,7 +325,7 @@ footer {
   background-color: #3b3a36;
   padding: 20px; }
 
-/* line 247, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 316, /Users/evanmarshall/new-blog/sass/main.sass */
 footer nav ul li {
   text-transform: capitalize;
   display: inline-block; }

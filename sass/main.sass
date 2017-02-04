@@ -10,6 +10,8 @@ $light-color: #e9ece5
 
 $green-color: #c0dfd9
 
+$dark-fade: rgba(59, 58, 54, 0.5)
+
 $primary-fade: rgba(192, 223, 217,.9)
 
 $dark-shadow: 1px 1px 1px #3b3a36
@@ -17,6 +19,12 @@ $dark-shadow: 1px 1px 1px #3b3a36
 $light-shadow: 1px 1px 1px #e9ece5
 
 /* MIXINS */
+=borderRad ($rad)
+    -webkit-border-radius: $rad
+    -moz-border-radius: $rad
+    -ms-border-radius: $rad
+    -o-border-radius: $rad
+    border-radius: $rad
 
 =transformScale
     -webkit-transform: scale(0.8)
@@ -54,17 +62,6 @@ $light-shadow: 1px 1px 1px #e9ece5
 =bShadowDark
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) /* horiz, vert, blur, spread, color */
-    
-=bShadowLite
-    -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19)
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19)
-
-=borderRad($rad)
-    -webkit-border-radius: $rad
-    -moz-border-radius: $rad
-    -ms-border-radius: $rad
-    -o-border-radius: $rad
-    border-radius: $rad
 
 =clearfix
     &:after
@@ -115,6 +112,9 @@ body
    
 p
     font-size: 1.1em
+    
+em
+    font-style: italic
 
 blockquote, q 
 	quotes: none
@@ -143,6 +143,10 @@ h1
     
 h2
     font-size: 1.6em
+    
+h3
+    font-weight: bolder
+    font-size: 1.2em
     
 nav, header, main, article, aside, section, footer
     +clearfix 
@@ -230,6 +234,71 @@ nav
 
 /* ARTICLE */
 
+#posts
+    background-color: $dark-color
+    padding: 50px 20px
+    
+#posts h2
+    text-align: center
+    padding: 20px 0
+    color: #fff
+    
+.flex-container
+    -webkit-display: inline-flex
+    -moz-display: inline-flex
+    -ms-display: inline-flex
+    -o-display: inline-flex
+    display: inline-flex
+    margin: 0 auto
+    max-width: 1150px
+    
+.flex-item
+    background-color: $light-color
+    width: 100%
+    margin: 1%
+    +bShadowDark
+    border: 1px solid $dark-color
+    +borderRad(4px)
+    
+.thumb-image
+    max-width: 100%
+    margin: 1%
+    
+.thumb-footer
+    padding: 10px
+    
+.thumb-title
+    margin: 20px 0 10px
+    
+.thumb-content
+    margin-bottom: 20px
+    
+.post-button:link, .post-button:visited
+    color: $dark-color
+    +borderRad(4px)
+    text-align: center
+    margin-bottom: 10px
+    padding: 6px 12px
+    background-color: $green-color
+    border: 1px solid $dark-fade
+    display: inline-block
+    position: absolute
+    bottom: 20px
+    
+.post-button:hover
+    color: $light-color
+    background-color: $dark-color
+    +transition(all, 1s)
+    +transTime(ease-in-out)
+        
+.post-button:active
+    color: #fff
+    +transformScale 
+    +transition(all, 0.1s)   
+    
+.thumb-footer h3
+    margin: 20px 0 10px    
+    
 /* CONTACT */
 
 /* FOOTER */
