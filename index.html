@@ -21,12 +21,46 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/180.png">
     -->
     
+    <style amp-custom>
+        form.amp-form-submit-success [submit-success],
+        form.amp-form-submit-error [submit-error]{
+            margin-top: 16px;
+        }
+        form.amp-form-submit-success [submit-success] {
+            color: green;
+        }
+        form.amp-form-submit-error [submit-error] {
+            color: red;
+        }
+        form.amp-form-submit-success > input {
+            display: none
+        }
+        form.amp-form-submit-success > label {
+            display: none
+        }
+        form.amp-form-submit-success > textarea {
+            display: none
+        }
+        .horizontal-display {
+            display: flex;
+            align-items: center;
+        }
+        .other-input {
+            margin: 0 16px;
+        }
+    </style>
     <!-- MAKE SURE REMOVE STYLESHEET IN PRODUCTION FOR INTERNAL SHEET -->
     <link rel="stylesheet" href="sass/main.css">
     
+    <!-- ANALYTICS SCRIPT -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <!-- AMP JS LIBRARY -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!-- INSERT CUSTOM AMP ADD_ON SCRIPTS -->
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     
@@ -36,7 +70,88 @@
 </head>
 
 <body id="page-top">
-    <nav>
+   
+    <!-- ANALYTICS ELEMENT -->
+    <amp-analytics type="googleanalytics" id="analytics-1">
+        <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-75955806-1"
+            },
+            "triggers": {
+                "trackPageviewWithAmpdocUrl": {
+                    "on": "visible",
+                    "request": "pageview",
+                    "vars": {
+                        "title": "Homepage",
+                        "ampdocUrl": "http://www.gigglesnshit.com/"
+                    }
+                },
+                "trackClickOnNav": {
+                    "selector": "#nav-analytics",
+                    "on": "click",
+                    "request": "event",
+                    "vars": {
+                        "eventCategory": "ui-components",
+                        "eventAction": "nav-click"
+                    }
+                },
+                "trackClickOnFacebookLink" : {
+                    "on": "click",
+                    "selector": "#facebook-analytics",
+                    "request": "social",
+                    "vars": {
+                        "socialNetwork": "facebook",
+                        "socialAction": "share",
+                        "socialTarget": "https://www.example.com"
+                    }
+                },
+                "trackClickOnGplusLink" : {
+                    "on": "click",
+                    "selector": "#gplus-analytics",
+                    "request": "social",
+                    "vars": {
+                        "socialNetwork": "gplus",
+                        "socialAction": "share",
+                        "socialTarget": "https://www.example.com"
+                    }
+                },
+                "trackClickOnLinkedinLink" : {
+                    "on": "click",
+                    "selector": "#linkedin-analytics",
+                    "request": "social",
+                    "vars": {
+                        "socialNetwork": "linkedin",
+                        "socialAction": "share",
+                        "socialTarget": "https://www.example.com"
+                    }
+                },
+                "trackClickOnPinterestLink" : {
+                    "on": "click",
+                    "selector": "#pinterest-analytics",
+                    "request": "social",
+                    "vars": {
+                        "socialNetwork": "pinterest",
+                        "socialAction": "pin",
+                        "socialTarget": "https://www.example.com"
+                    }
+                },
+                "trackClickOnTwitterLink" : {
+                    "on": "click",
+                    "selector": "#twitter-analytics",
+                    "request": "social",
+                    "vars": {
+                        "socialNetwork": "twitter",
+                        "socialAction": "tweet",
+                        "socialTarget": "https://www.example.com"
+                    }
+                }
+            }
+        }
+        </script>
+    </amp-analytics>
+   
+    <nav id="nav-analytics">
         <a href="/">
             <img id="brand" src="img/brand.svg" alt="blog logo">
         </a>
@@ -301,18 +416,28 @@
             </div>                
         </amp-carousel>
     </article>
+    <!-- FIGURE OUT HOW TO GET LABELS AND INPUTS HIDDEN AFTER SUCCESS AS WELL AS IT WORKING USInG FIELDSET TAG -->
     <section id="contact">
-        <form>
-            <fieldset>
-                <legend>Let's get in touch!</legend>
-                <label for="form-name">Full Name</label>
-                <input type="text" id="form-name" name="form-name" placeholder="Enter Name Here">
-                <label for="form-email">Your Email</label>
-                <input type="email" id="form-email" name="form-email" placeholder="Enter Email Here">
-                <label for="form-message">Your Message</label>
-                <textarea type="text" id="form-message" name="form-message" placeholder="Enter Message Here"></textarea>
-                <input type="submit" value="Send Message">
-            </fieldset>
+        <h2>Contact Me</h2>
+        <form class="hide-inputs" method="post" action-xhr="https://ampbyexample.com/components/amp-form/submit-form-input-text-xhr" target="_top">
+            <label for="form-name">Full Name</label>
+            <input type="text" class="data-input" id="form-name" name="form-name" placeholder="Enter Name Here" required>
+            <label for="form-email">Your Email</label>
+            <input type="email" class="data-input" id="form-email" name="form-email" placeholder="Enter Email Here" required>
+            <label for="form-message">Your Message</label>
+            <textarea type="text" class="data-input" id="form-message" name="form-message" placeholder="Enter Message Here" required></textarea>
+            <input type="submit" class="button button-primary" value="Send Message">
+            <input type="reset" value="Clear Fields" class="button button-primary other-input">
+            <div submit-success>
+                <template type="amp-mustache">
+                    Success! Thanks {{name}} for your message. I will respond shortly.
+                </template>
+            </div>
+            <div submit-error>
+                <template type="amp-mustache">
+                    Error! Thanks {{name}} for trying to send a message, but something went wrong.
+                </template>
+            </div>
         </form>
     </section>
     <footer>
@@ -320,9 +445,14 @@
             <ul id="copyright">
                 <li>&copy; &nbsp; 2017 &#45; Giggles N Shit Blog</li>
             </ul>
-            <ul id="social">
-
-            </ul>
+            <div id="social">
+                <amp-social-share type="email" subject="Check out this blog" body="GIGGLESNSHIT BLOG - http://www.gigglesnshit.com/"></amp-social-share>
+                <amp-social-share id="facebook-analytics" type="facebook" data-param-app_id="970981369664540"></amp-social-share>
+                <amp-social-share id="gplus-analytics" type="gplus"></amp-social-share>
+                <amp-social-share id="linkedin-analytics" type="linkedin" data-param-text="Hello world" data-param-url="https://example.com/"></amp-social-share>
+                <amp-social-share id="pinterest-analytics" type="pinterest" description="Sample description here"></amp-social-share>
+                <amp-social-share id="twitter-analytics" type="twitter" text="Sample text here"></amp-social-share>
+            </div>
         </nav>
     </footer>
 </body>

@@ -156,7 +156,7 @@ nav, header, main, article, aside, section, footer
 nav
     /* to center content in middle of div just make the line height the same as the height of div */
     position: fixed 
-    z-index: 2
+    z-index: 9999
     width: 100%
     font-family: Arial, sans-serif
     text-transform: lowercase
@@ -301,18 +301,37 @@ nav
     
 /* CONTACT */
 
+#contact
+    color: $dark-color
+    text-align: center
+    background-color: $light-color
+    padding: 50px 20px
+
+#contact h2
+    text-align: center
+    padding: 20px 0
+
 /* FOOTER */
 
 footer
     color: $light-color
     /* have to specify width because fixed position shortens width */
-    z-index: 2
+    z-index: 9999
     position: fixed
     bottom: 0
     width: 100%
     background-color: $dark-color
-    padding: 20px
+    padding: 30px
     
 footer nav ul li
+    display: inline-block
     text-transform: capitalize 
-    display: inline-block 
+    
+footer #copyright
+    float: left
+
+footer #social
+    float: right
+    position: relative
+    top: -20px
+    right: 50px
