@@ -19,6 +19,7 @@ $dark-shadow: 1px 1px 1px #3b3a36
 $light-shadow: 1px 1px 1px #e9ece5
 
 /* MIXINS */
+
 =borderRad ($rad)
     -webkit-border-radius: $rad
     -moz-border-radius: $rad
@@ -66,7 +67,7 @@ $light-shadow: 1px 1px 1px #e9ece5
 =clearfix
     &:after
         content: ""
-        display: table
+        display: block
         clear: both
 
 =bgImage ($bgPos, $bgAttach, $bgRepeat, $bgSize)
@@ -96,19 +97,19 @@ time, mark, audio, video
 	padding: 0
 	border: 0
 	font-size: 100%
+    box-sizing: border-box
 	font: inherit
 	vertical-align: baseline
-    height: 100%
-    width: 100%
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
-	display: block
+    box-sizing: border-box
 
 body 
     background-color: $light-color
     padding-bottom: 60px 
     font-family: $primary-font
+    box-sizing: border-box
    
 p
     font-size: 1.1em
@@ -150,6 +151,10 @@ h3
     
 nav, header, main, article, aside, section, footer
     +clearfix 
+    
+img 
+    max-width: 100%
+    height: auto
 
 /* NAV */
 
@@ -160,6 +165,10 @@ nav
     width: 100%
     font-family: Arial, sans-serif
     text-transform: lowercase
+
+/*#brand-sm
+    display: none
+    visibility: hidden*/
     
 #brand
     float: left
@@ -214,16 +223,18 @@ nav
     color: #fff
     text-shadow: $dark-shadow
     
-#hero h1
-    /*background-size 100% contains larger images inside width and height */
-    width: 342px
-    height: 69px
-    background-image: url(../img/brand_text.svg)
-    background-size: 100%
-    text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
+#hero 
+    h1
+        /*background-size 100% contains larger images inside width and height */
+        width: 342px
+        height: 69px
+        background-image: url(../img/brand_text.svg)
+        background-size: 100%
+        text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
     
-#hero p
-    font-family: Arial, sans-serif
+#hero 
+    p
+        font-family: Arial, sans-serif
     
 /* MAIN */
 
@@ -231,24 +242,31 @@ nav
     color: $dark-color
     padding: 50px 20px
 
-#intro h2
-    text-align: center
-    padding: 20px 0
+#intro 
+    h2
+        text-align: center
+        padding: 20px 0
 
-#intro p
-    +columns(3, 40px, 1px, solid, $grey-color)
+#intro 
+    p
+        +columns(3, 40px, 1px, solid, $grey-color)
 
 /* ARTICLE */
+
+.mobile
+    display: none
+    visibility: hidden
 
 #posts
     background-color: $dark-color
     padding: 50px 20px
     
-#posts h2
-    text-align: center
-    padding: 20px 0
-    color: #fff
-    
+#posts 
+    h2
+        text-align: center
+        padding: 20px 0
+        color: #fff
+
 .flex-container
     -webkit-display: inline-flex
     -moz-display: inline-flex
@@ -302,8 +320,9 @@ nav
     +transformScale 
     +transition(all, 0.1s)   
     
-.thumb-footer h3
-    margin: 20px 0 10px    
+.thumb-footer 
+    h3
+        margin: 20px 0 10px    
     
 /* CONTACT */
 
@@ -313,9 +332,48 @@ nav
     background-color: $light-color
     padding: 50px 20px
 
-#contact h2
-    text-align: center
+#contact-wrap
     padding: 20px 0
+    width: 400px
+    display: block
+    background-color: #fff
+    margin: 0 auto
+    +bShadowDark
+
+#contact 
+    h2
+        text-align: center
+        padding: 20px 0
+        
+form label
+    display: block
+        
+form input, form textarea
+    padding: 8px
+    margin: 10px 0
+    
+input[type="text"], input[type="email"]
+    width: 300px
+    
+input[type="submit"], input[type="reset"]
+    text-transform: uppercase
+    color: $dark-color
+    +borderRad(4px)
+    background-color: $green-color
+    border: 1px solid $dark-fade
+    
+/* STYLE PLACEHOLDERS USING MIXIN */
+    
+input[type="submit"]:hover, input[type="reset"]:hover
+    color: $light-color
+    background-color: $dark-color
+    +transition(all, 1s)
+    +transTime(ease-in-out)
+        
+input[type="submit"]:active, input[type="reset"]:active
+    color: #fff
+    +transformScale 
+    +transition(all, 0.1s) 
 
 /* FOOTER */
 
@@ -329,12 +387,14 @@ footer
     background-color: $dark-color
     padding: 30px
     
-footer div
-    text-transform: capitalize
-    display: inline-block
+footer 
+    div
+        text-transform: capitalize
+        display: inline-block
     
-footer #top
-    margin-left: 25%
+footer 
+    #top
+        margin-left: 25%
     
 footer #top a:hover
     color: $green-color
@@ -346,14 +406,16 @@ footer #top a:active
     color: $light-color
     +transition(all, 0.1s)
     
-footer #copyright
-    float: left
+footer 
+    #copyright
+        float: left
 
-footer #social
-    float: right
-    position: relative
-    top: -20px
-    right: 50px
+footer 
+    #social
+        float: right
+        position: relative
+        top: -20px
+        right: 50px
     
 .amp-social-share-email, .amp-social-share-facebook, .amp-social-share-gplus, .amp-social-share-linkedin, .amp-social-share-pinterest, .amp-social-share-twitter
     background-color: $grey-color
@@ -395,3 +457,99 @@ footer #social
     +transition(all, 1s)
     +transTime(ease-in-out)
     +transformScale 
+    
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 768px)
+    
+    #brand
+        display: none
+        visibility: hidden
+    
+    #hamburger
+        position: fixed
+        
+    #hamburger:hover
+        +transition(all, 1s)
+        +transTime(ease-in-out)
+        +transformScale
+        
+    #sidebar
+        padding-top: 20px
+    
+    #brand-sm
+        margin: 0
+        padding-left: 10px
+    
+    #mobile-links
+        padding: 20px 0
+        margin: 0
+        
+    #mobile-links li
+        margin: 0
+        padding: 0 5px 0 10px
+    
+    #mobile-links li a
+        word-spacing: normal
+        letter-spacing: normal
+        margin: 0
+        padding: 0
+        float: left
+        line-height: 2em
+        font-size: 1em
+    
+    #hero-text
+        padding: 200px 20px
+        max-width: 100%
+        position: static
+        width: calc(342px/1.5)
+    
+    #hero 
+        h1
+            background-repeat: no-repeat
+            width: calc(342px/1.5)
+            height: calc(69px/1.5)
+
+    #intro 
+        p
+            +columns(1, 40px, 1px, solid, $grey-color)
+            
+    .mobile
+        display: block
+        visibility: visible
+        
+    .desktop
+        display: none
+        visibility: hidden
+        
+    .flex-item
+        box-shadow: none
+
+    #contact-wrap
+        width: 100%
+        
+    footer
+        padding: 20px 0 90px 0
+        text-align: center
+    
+    footer 
+        div
+            display: block
+    
+    footer 
+        #top
+            margin: 0
+            padding-bottom: 20px
+
+    footer 
+        #copyright
+            display: none
+            visibility: hidden
+
+    footer 
+        #social
+            float: none
+            position: static
+            
+    body 
+        padding-bottom: 110px
