@@ -1,4 +1,4 @@
-/* VARIABLES */
+/* VARIABLES ************************************************/
 
 $primary-font: Helvetica, Arial, sans-serif
 
@@ -18,7 +18,11 @@ $dark-shadow: 1px 1px 1px #3b3a36
 
 $light-shadow: 1px 1px 1px #e9ece5
 
-/* MIXINS */
+/* MIXINS ***************************************************/
+=bSize
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
 =borderRad ($rad)
     -webkit-border-radius: $rad
@@ -65,7 +69,6 @@ $light-shadow: 1px 1px 1px #e9ece5
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) /* horiz, vert, blur, spread, color */
 
 =clearfix
-    &:after
         content: ""
         display: block
         clear: both
@@ -78,7 +81,7 @@ $light-shadow: 1px 1px 1px #e9ece5
     -webkit-background-size: $bgSize
     background-size: $bgSize
 
-/* BROWSER RESET */
+/* BROWSER RESET ********************************************/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -97,19 +100,19 @@ time, mark, audio, video
 	padding: 0
 	border: 0
 	font-size: 100%
-    box-sizing: border-box
+    +bSize
 	font: inherit
 	vertical-align: baseline
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
-    box-sizing: border-box
+    +bSize
 
 body 
     background-color: $light-color
     padding-bottom: 60px 
     font-family: $primary-font
-    box-sizing: border-box
+    +bSize
    
 p
     font-size: 1.1em
@@ -137,7 +140,7 @@ a
     color: #fff
     cursor: pointer
 
-/* MAIN STYLES */
+/* MAIN STYLES **********************************************/
 
 h1
     font-size: 3.6em
@@ -156,7 +159,7 @@ img
     max-width: 100%
     height: auto
 
-/* NAV */
+/* NAV ******************************************************/
 
 nav
     /* to center content in middle of div just make the line height the same as the height of div */
@@ -165,10 +168,6 @@ nav
     width: 100%
     font-family: Arial, sans-serif
     text-transform: lowercase
-
-/*#brand-sm
-    display: none
-    visibility: hidden*/
     
 #brand
     float: left
@@ -188,7 +187,7 @@ nav
     font-size: 1.8em
     text-shadow: $dark-shadow
     
-.main-nav:hover
+.main-nav:hover, .main-nav:focus
     color: $dark-color
     text-decoration: underline
     text-shadow: none
@@ -201,13 +200,13 @@ nav
     +transition(all, 0.1s)
     text-shadow: $dark-shadow
     
-/* ADSENSE */
+/* ADSENSE **************************************************/
 
 .ad
     background-color: $green-color
     padding: 10px 25%
 
-/* HERO */
+/* HERO *****************************************************/
 
 #hero
     height: 100vh
@@ -236,7 +235,7 @@ nav
     p
         font-family: Arial, sans-serif
     
-/* MAIN */
+/* MAIN *****************************************************/
 
 #intro
     color: $dark-color
@@ -251,7 +250,7 @@ nav
     p
         +columns(3, 40px, 1px, solid, $grey-color)
 
-/* ARTICLE */
+/* ARTICLE **************************************************/
 
 .mobile
     display: none
@@ -324,45 +323,61 @@ nav
     h3
         margin: 20px 0 10px    
     
-/* CONTACT */
+/* CONTACT **************************************************/
 
 #contact
     color: $dark-color
-    text-align: center
     background-color: $light-color
     padding: 50px 20px
-
-#contact-wrap
-    padding: 20px 0
-    width: 400px
-    display: block
-    background-color: #fff
-    margin: 0 auto
-    +bShadowDark
 
 #contact 
     h2
         text-align: center
         padding: 20px 0
         
-form label
-    display: block
-        
-form input, form textarea
-    padding: 8px
-    margin: 10px 0
+#contact-wrap
+    +bSize
+    width: 600px
+    background-color: #fff
+    margin: 0 auto
+    padding: 20px
+    +bShadowDark
     
-input[type="text"], input[type="email"]
-    width: 300px
+label
+    +bSize
+    padding: 10px
+    font-size: 1em
+    text-transform: uppercase
+    background-color: $dark-color
+    color: $green-color
+    display: block
+    width: 100%
+                
+input[type="text"], input[type="email"], textarea
+    border: 1px solid $light-color
+    border-top: none
+    +bSize
+    font-size: 1em
+    color: $dark-color
+    font-family: monaco, monospace
+    text-transform: uppercase
+    width: 100%
+    display: block
+    padding: 8px
+    margin: 0 0 20px
+    
+textarea
+    resize: vertical
     
 input[type="submit"], input[type="reset"]
+    cursor: pointer
+    padding: 8px
+    font-size: 1em
     text-transform: uppercase
     color: $dark-color
     +borderRad(4px)
     background-color: $green-color
     border: 1px solid $dark-fade
-    
-/* STYLE PLACEHOLDERS USING MIXIN */
     
 input[type="submit"]:hover, input[type="reset"]:hover
     color: $light-color
@@ -372,10 +387,11 @@ input[type="submit"]:hover, input[type="reset"]:hover
         
 input[type="submit"]:active, input[type="reset"]:active
     color: #fff
+    outline-color: $green-color
     +transformScale 
     +transition(all, 0.1s) 
 
-/* FOOTER */
+/* FOOTER ***************************************************/
 
 footer
     color: #fff
@@ -421,7 +437,7 @@ footer
     background-color: $grey-color
     
 .amp-social-share-email:hover 
-    box-sizing: border-box /* causes 1px border to not add to the width and skew the other boxes */
+    +bSize /* causes 1px border to not add to the width and skew the other boxes */
     background-color: $dark-color
     border: 1px solid $light-color
     +transition(all, 1s)
@@ -458,30 +474,27 @@ footer
     +transTime(ease-in-out)
     +transformScale 
     
-/* RESPONSIVE CSS */
+/* RESPONSIVE CSS *******************************************/
 
 @media only screen and (max-width: 768px)
     
     #brand
         display: none
         visibility: hidden
+        
+    #close
+        float: right
     
     #hamburger
         position: fixed
         
-    #hamburger:hover
+    #hamburger:hover, #hamburger:focus
         +transition(all, 1s)
         +transTime(ease-in-out)
         +transformScale
-        
-    #sidebar
-        padding-top: 20px
-    
-    #brand-sm
-        margin: 0
-        padding-left: 10px
     
     #mobile-links
+        +clearfix
         padding: 20px 0
         margin: 0
         
@@ -509,6 +522,9 @@ footer
             background-repeat: no-repeat
             width: calc(342px/1.5)
             height: calc(69px/1.5)
+            
+    #intro
+        text-align: center
 
     #intro 
         p
@@ -528,8 +544,14 @@ footer
     #contact-wrap
         width: 100%
         
+    input[type="submit"], input[type="reset"]
+        width: 50%
+        display: block
+        margin: 0
+        margin-bottom: 10px
+        
     footer
-        padding: 20px 0 90px 0
+        padding: 20px 0 80px 0
         text-align: center
     
     footer 
@@ -547,9 +569,9 @@ footer
             visibility: hidden
 
     footer 
-        #social
+        #social-mobile
             float: none
             position: static
             
     body 
-        padding-bottom: 110px
+        padding-bottom: 100px
