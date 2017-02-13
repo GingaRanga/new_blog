@@ -276,6 +276,7 @@ nav
     max-width: 1150px
     
 .flex-item
+    position: relative
     background-color: $light-color
     width: 100%
     margin: 1%
@@ -293,10 +294,9 @@ nav
 .thumb-title
     margin: 20px 0 10px
     
-.thumb-content
-    margin-bottom: 20px
-    
 .post-button:link, .post-button:visited
+    position: absolute /* absolute positioned relative to relative parent flex-item */
+    bottom: 0
     color: $dark-color
     +borderRad(4px)
     text-align: center
@@ -304,9 +304,7 @@ nav
     padding: 6px 12px
     background-color: $green-color
     border: 1px solid $dark-fade
-    display: inline-block
-    position: absolute
-    bottom: 20px
+    display: block
     
 .post-button:hover
     color: $light-color
@@ -547,7 +545,7 @@ footer
         width: 100%
         
     input[type="submit"], input[type="reset"]
-        width: 50%
+        width: 100%
         display: block
         margin: 0
         margin-bottom: 10px
