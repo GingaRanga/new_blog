@@ -123,12 +123,7 @@ nav {
   text-shadow: none;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out; }
+  transition: all 1s; }
 
 .main-nav:active {
   color: #c0dfd9;
@@ -406,12 +401,7 @@ nav {
   background-color: #3b3a36;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out; }
+  transition: all 1s; }
 
 .post-button:active {
   color: #fff;
@@ -502,12 +492,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   background-color: #3b3a36;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out; }
+  transition: all 1s; }
 
 input[type="submit"]:active, input[type="reset"]:active {
   color: #fff;
@@ -544,12 +529,7 @@ footer #top a:hover {
   text-decoration: underline;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out; }
+  transition: all 1s; }
 
 footer #top a:active {
   color: #e9ece5;
@@ -578,11 +558,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -594,11 +569,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -610,11 +580,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -626,11 +591,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -642,11 +602,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -658,11 +613,6 @@ footer #social {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-fuction: ease-in-out;
-  -moz-transition-timing-fuction: ease-in-out;
-  -ms-transition-timing-fuction: ease-in-out;
-  -o-transition-timing-fuction: ease-in-out;
-  transition-timing-fuction: ease-in-out;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -685,11 +635,6 @@ footer #social {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
-    -webkit-transition-timing-fuction: ease-in-out;
-    -moz-transition-timing-fuction: ease-in-out;
-    -ms-transition-timing-fuction: ease-in-out;
-    -o-transition-timing-fuction: ease-in-out;
-    transition-timing-fuction: ease-in-out;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);

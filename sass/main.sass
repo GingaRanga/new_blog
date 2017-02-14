@@ -38,13 +38,6 @@ $light-shadow: 1px 1px 1px #e9ece5
     -o-transform: scale(0.8)
     transform: scale(0.8)
 
-=transTime($timing)
-    -webkit-transition-timing-fuction: $timing
-    -moz-transition-timing-fuction: $timing
-    -ms-transition-timing-fuction: $timing
-    -o-transition-timing-fuction: $timing
-    transition-timing-fuction: $timing
-
 =transition($name, $duration)
     -webkit-transition: $name $duration
     -o-transition: $name $duration
@@ -192,7 +185,6 @@ nav
     text-decoration: underline
     text-shadow: none
     +transition(all, 1s)
-    +transTime(ease-in-out)
         
 .main-nav:active
     color: $green-color
@@ -372,7 +364,6 @@ nav
     color: $light-color
     background-color: $dark-color
     +transition(all, 1s)
-    +transTime(ease-in-out)
         
 .post-button:active
     color: #fff
@@ -449,7 +440,6 @@ input[type="submit"]:hover, input[type="reset"]:hover
     color: $light-color
     background-color: $dark-color
     +transition(all, 1s)
-    +transTime(ease-in-out)
         
 input[type="submit"]:active, input[type="reset"]:active
     color: #fff
@@ -482,7 +472,6 @@ footer #top a:hover
     color: $green-color
     text-decoration: underline
     +transition(all, 1s)
-    +transTime(ease-in-out)
         
 footer #top a:active
     color: $light-color
@@ -507,37 +496,31 @@ footer
     background-color: $dark-color
     border: 1px solid $light-color
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
         
 .amp-social-share-facebook:hover
     background-color: #3b5998
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
     
 .amp-social-share-gplus:hover
     background-color: #dd4b39
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
     
 .amp-social-share-linkedin:hover
     background-color: #007bb5
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
     
 .amp-social-share-pinterest:hover
     background-color: #cb2027
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
     
 .amp-social-share-twitter:hover
     background-color: #55acee
     +transition(all, 1s)
-    +transTime(ease-in-out)
     +transformScale 
     
 /* RESPONSIVE CSS *******************************************/
@@ -556,7 +539,6 @@ footer
         
     #hamburger:hover, #hamburger:focus
         +transition(all, 1s)
-        +transTime(ease-in-out)
         +transformScale
     
     #mobile-links

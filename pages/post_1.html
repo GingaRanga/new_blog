@@ -10,7 +10,7 @@
     
     <title>Shit, I'm Pregnant</title>
     <!-- INSERT FAVICON -->
-    <link rel="canonical" href="http://www.gigglesnshit.com/pages/blog_1.html">
+    <link rel="canonical" href="http://www.gigglesnshit.com/pages/post_1.html">
     
     <!--
     <link rel="manifest" href="/static/manifest.json">
@@ -61,6 +61,34 @@
                 width: 728px; height: 90px; 
             } 
         }
+        #hero-1 {
+          background-image: url(../img/announcement-hero.svg);
+          background-color: #c0dfd9;
+          background-position: 25% 40%;
+          background-attachment: scroll;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover; 
+        }
+        .hero{
+            height: 100vh;
+            max-width: 100%;
+        }
+        .hero-text{
+            width: 25%;
+            position: relative;
+            right: -65%;
+            top: 50%;
+            color: #fff;
+            text-shadow: $dark-shadow;
+        }
+        .hero h1 {
+          width: 342px;
+          height: 69px;
+          background-image: url(../img/brand_text.svg);
+          background-size: 100%;
+          text-indent: -9999px; 
+        }
     </style>
     <!-- MAKE SURE REMOVE STYLESHEET IN PRODUCTION FOR INTERNAL SHEET -->
     <link rel="stylesheet" href="../sass/main.css">
@@ -100,7 +128,7 @@
                     "request": "pageview",
                     "vars": {
                         "title": "Homepage",
-                        "ampdocUrl": "http://www.gigglesnshit.com/pages/blog_1.html"
+                        "ampdocUrl": "http://www.gigglesnshit.com/pages/post_1.html"
                     }
                 },
                 "trackClickOnNav": {
