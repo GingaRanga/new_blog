@@ -171,9 +171,12 @@ nav {
 
 /* HERO *****************************************************/
 /* line 211, /Users/evanmarshall/new-blog/sass/main.sass */
-#hero {
+.hero {
   height: 100vh;
-  max-width: 100%;
+  max-width: 100%; }
+
+/* line 215, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero {
   background-image: url(../img/hero.svg);
   background-color: #c0dfd9;
   background-position: 25% 40%;
@@ -182,8 +185,158 @@ nav {
   -webkit-background-size: cover;
   background-size: cover; }
 
-/* line 217, /Users/evanmarshall/new-blog/sass/main.sass */
-#hero-text {
+/* line 219, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-1 {
+  background-image: url(../img/announcement-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 223, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-2 {
+  background-image: url(../img/watermelon-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 227, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-3 {
+  background-image: url(../img/peanut-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 231, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-4 {
+  background-image: url(../img/bomb-1-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 235, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-5 {
+  background-image: url(../img/bomb-2-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 239, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-6 {
+  background-image: url(../img/tough-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 243, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-7 {
+  background-image: url(../img/santa-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 247, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-8 {
+  background-image: url(../img/car-seat-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 251, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-9 {
+  background-image: url(../img/pooface-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 255, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-10 {
+  background-image: url(../img/yellow-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 259, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-11 {
+  background-image: url(../img/tx-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 263, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-12 {
+  background-image: url(../img/plane-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 267, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-13 {
+  background-image: url(../img/beads-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 271, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-14 {
+  background-image: url(../img/johnny-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 275, /Users/evanmarshall/new-blog/sass/main.sass */
+#hero-15 {
+  background-image: url(../img/cn-hero.svg);
+  background-color: #c0dfd9;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 279, /Users/evanmarshall/new-blog/sass/main.sass */
+.hero-text {
   width: 25%;
   position: relative;
   right: -65%;
@@ -191,8 +344,8 @@ nav {
   color: #fff;
   text-shadow: 1px 1px 1px #3b3a36; }
 
-/* line 226, /Users/evanmarshall/new-blog/sass/main.sass */
-#hero h1 {
+/* line 288, /Users/evanmarshall/new-blog/sass/main.sass */
+.hero h1 {
   /*background-size 100% contains larger images inside width and height */
   width: 342px;
   height: 69px;
@@ -200,22 +353,22 @@ nav {
   background-size: 100%;
   text-indent: -9999px; }
 
-/* line 235, /Users/evanmarshall/new-blog/sass/main.sass */
-#hero p {
+/* line 297, /Users/evanmarshall/new-blog/sass/main.sass */
+.hero p {
   font-family: Arial, sans-serif; }
 
 /* MAIN *****************************************************/
-/* line 240, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 302, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro {
   color: #3b3a36;
   padding: 50px 20px; }
 
-/* line 245, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 307, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro h2 {
   text-align: center;
   padding: 20px 0; }
 
-/* line 250, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 312, /Users/evanmarshall/new-blog/sass/main.sass */
 #intro p {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -231,23 +384,23 @@ nav {
   column-rule: 1px solid #b3c2bf; }
 
 /* ARTICLE **************************************************/
-/* line 255, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 317, /Users/evanmarshall/new-blog/sass/main.sass */
 .mobile {
   display: none;
   visibility: hidden; }
 
-/* line 259, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 321, /Users/evanmarshall/new-blog/sass/main.sass */
 #posts {
   background-color: #3b3a36;
   padding: 50px 20px; }
 
-/* line 264, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 326, /Users/evanmarshall/new-blog/sass/main.sass */
 #posts h2 {
   text-align: center;
   padding: 20px 0;
   color: #fff; }
 
-/* line 269, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 331, /Users/evanmarshall/new-blog/sass/main.sass */
 .flex-container {
   -webkit-display: inline-flex;
   -moz-display: inline-flex;
@@ -257,7 +410,7 @@ nav {
   margin: 0 auto;
   max-width: 1150px; }
 
-/* line 278, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 340, /Users/evanmarshall/new-blog/sass/main.sass */
 .flex-item {
   position: relative;
   background-color: #e9ece5;
@@ -272,20 +425,20 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 287, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 349, /Users/evanmarshall/new-blog/sass/main.sass */
 .thumb-image {
   max-width: 100%;
   margin: 1%; }
 
-/* line 291, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 353, /Users/evanmarshall/new-blog/sass/main.sass */
 .thumb-footer {
   padding: 10px; }
 
-/* line 294, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 356, /Users/evanmarshall/new-blog/sass/main.sass */
 .thumb-title {
   margin: 20px 0 10px; }
 
-/* line 297, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 359, /Users/evanmarshall/new-blog/sass/main.sass */
 .post-button:link, .post-button:visited {
   position: absolute;
   bottom: 0;
@@ -302,7 +455,7 @@ nav {
   border: 1px solid rgba(59, 58, 54, 0.5);
   display: block; }
 
-/* line 309, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 371, /Users/evanmarshall/new-blog/sass/main.sass */
 .post-button:hover {
   color: #e9ece5;
   background-color: #3b3a36;
@@ -315,7 +468,7 @@ nav {
   -o-transition-timing-fuction: ease-in-out;
   transition-timing-fuction: ease-in-out; }
 
-/* line 315, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 377, /Users/evanmarshall/new-blog/sass/main.sass */
 .post-button:active {
   color: #fff;
   -webkit-transform: scale(0.8);
@@ -327,24 +480,24 @@ nav {
   -o-transition: all 0.1s;
   transition: all 0.1s; }
 
-/* line 321, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 383, /Users/evanmarshall/new-blog/sass/main.sass */
 .thumb-footer h3 {
   margin: 20px 0 10px; }
 
 /* FIX BUTTON OVERLAY ON TEXT FOR MOBILE */
 /* CONTACT **************************************************/
-/* line 328, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 390, /Users/evanmarshall/new-blog/sass/main.sass */
 #contact {
   color: #3b3a36;
   background-color: #e9ece5;
   padding: 50px 20px; }
 
-/* line 334, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 396, /Users/evanmarshall/new-blog/sass/main.sass */
 #contact h2 {
   text-align: center;
   padding: 20px 0; }
 
-/* line 338, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 400, /Users/evanmarshall/new-blog/sass/main.sass */
 #contact-wrap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -356,7 +509,7 @@ nav {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-/* line 346, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 408, /Users/evanmarshall/new-blog/sass/main.sass */
 label {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -369,7 +522,7 @@ label {
   display: block;
   width: 100%; }
 
-/* line 356, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 418, /Users/evanmarshall/new-blog/sass/main.sass */
 input[type="text"], input[type="email"], textarea {
   border: 1px solid #e9ece5;
   border-top: none;
@@ -385,11 +538,11 @@ input[type="text"], input[type="email"], textarea {
   padding: 8px;
   margin: 0 0 20px; }
 
-/* line 369, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 431, /Users/evanmarshall/new-blog/sass/main.sass */
 textarea {
   resize: vertical; }
 
-/* line 372, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 434, /Users/evanmarshall/new-blog/sass/main.sass */
 input[type="submit"], input[type="reset"] {
   cursor: pointer;
   padding: 8px;
@@ -404,7 +557,7 @@ input[type="submit"], input[type="reset"] {
   background-color: #c0dfd9;
   border: 1px solid rgba(59, 58, 54, 0.5); }
 
-/* line 382, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 444, /Users/evanmarshall/new-blog/sass/main.sass */
 input[type="submit"]:hover, input[type="reset"]:hover {
   color: #e9ece5;
   background-color: #3b3a36;
@@ -417,7 +570,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   -o-transition-timing-fuction: ease-in-out;
   transition-timing-fuction: ease-in-out; }
 
-/* line 388, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 450, /Users/evanmarshall/new-blog/sass/main.sass */
 input[type="submit"]:active, input[type="reset"]:active {
   color: #fff;
   outline-color: #c0dfd9;
@@ -431,7 +584,7 @@ input[type="submit"]:active, input[type="reset"]:active {
   transition: all 0.1s; }
 
 /* FOOTER ***************************************************/
-/* line 396, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 458, /Users/evanmarshall/new-blog/sass/main.sass */
 footer {
   color: #fff;
   /* have to specify width because fixed position shortens width */
@@ -442,16 +595,16 @@ footer {
   background-color: #3b3a36;
   padding: 30px; }
 
-/* line 407, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 469, /Users/evanmarshall/new-blog/sass/main.sass */
 footer div {
   text-transform: capitalize;
   display: inline-block; }
 
-/* line 412, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 474, /Users/evanmarshall/new-blog/sass/main.sass */
 footer #top {
   margin-left: 25%; }
 
-/* line 415, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 477, /Users/evanmarshall/new-blog/sass/main.sass */
 footer #top a:hover {
   color: #c0dfd9;
   text-decoration: underline;
@@ -464,29 +617,29 @@ footer #top a:hover {
   -o-transition-timing-fuction: ease-in-out;
   transition-timing-fuction: ease-in-out; }
 
-/* line 421, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 483, /Users/evanmarshall/new-blog/sass/main.sass */
 footer #top a:active {
   color: #e9ece5;
   -webkit-transition: all 0.1s;
   -o-transition: all 0.1s;
   transition: all 0.1s; }
 
-/* line 426, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 488, /Users/evanmarshall/new-blog/sass/main.sass */
 footer #copyright {
   float: left; }
 
-/* line 430, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 492, /Users/evanmarshall/new-blog/sass/main.sass */
 footer #social {
   float: right;
   position: relative;
   top: -20px;
   right: 50px; }
 
-/* line 436, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 498, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-email, .amp-social-share-facebook, .amp-social-share-gplus, .amp-social-share-linkedin, .amp-social-share-pinterest, .amp-social-share-twitter {
   background-color: #b3c2bf; }
 
-/* line 439, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 501, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-email:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -508,7 +661,7 @@ footer #social {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-/* line 447, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 509, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-facebook:hover {
   background-color: #3b5998;
   -webkit-transition: all 1s;
@@ -525,7 +678,7 @@ footer #social {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-/* line 453, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 515, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-gplus:hover {
   background-color: #dd4b39;
   -webkit-transition: all 1s;
@@ -542,7 +695,7 @@ footer #social {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-/* line 459, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 521, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-linkedin:hover {
   background-color: #007bb5;
   -webkit-transition: all 1s;
@@ -559,7 +712,7 @@ footer #social {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-/* line 465, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 527, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-pinterest:hover {
   background-color: #cb2027;
   -webkit-transition: all 1s;
@@ -576,7 +729,7 @@ footer #social {
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-/* line 471, /Users/evanmarshall/new-blog/sass/main.sass */
+/* line 533, /Users/evanmarshall/new-blog/sass/main.sass */
 .amp-social-share-twitter:hover {
   background-color: #55acee;
   -webkit-transition: all 1s;
@@ -595,17 +748,17 @@ footer #social {
 
 /* RESPONSIVE CSS *******************************************/
 @media only screen and (max-width: 550px) {
-  /* line 481, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 543, /Users/evanmarshall/new-blog/sass/main.sass */
   #brand {
     display: none;
     visibility: hidden; }
-  /* line 485, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 547, /Users/evanmarshall/new-blog/sass/main.sass */
   #close {
     float: right; }
-  /* line 488, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 550, /Users/evanmarshall/new-blog/sass/main.sass */
   #hamburger {
     position: fixed; }
-  /* line 491, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 553, /Users/evanmarshall/new-blog/sass/main.sass */
   #hamburger:hover, #hamburger:focus {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
@@ -620,18 +773,18 @@ footer #social {
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8); }
-  /* line 496, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 558, /Users/evanmarshall/new-blog/sass/main.sass */
   #mobile-links {
     content: "";
     display: block;
     clear: both;
     padding: 20px 0;
     margin: 0; }
-  /* line 501, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 563, /Users/evanmarshall/new-blog/sass/main.sass */
   #mobile-links li {
     margin: 0;
     padding: 0 5px 0 10px; }
-  /* line 505, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 567, /Users/evanmarshall/new-blog/sass/main.sass */
   #mobile-links li a {
     word-spacing: normal;
     letter-spacing: normal;
@@ -640,21 +793,21 @@ footer #social {
     float: left;
     line-height: 2em;
     font-size: 1em; }
-  /* line 514, /Users/evanmarshall/new-blog/sass/main.sass */
-  #hero-text {
+  /* line 576, /Users/evanmarshall/new-blog/sass/main.sass */
+  .hero-text {
     padding: 200px 20px;
     max-width: 100%;
     position: static;
     width: calc(342px/1.5); }
-  /* line 521, /Users/evanmarshall/new-blog/sass/main.sass */
-  #hero h1 {
+  /* line 583, /Users/evanmarshall/new-blog/sass/main.sass */
+  .hero h1 {
     background-repeat: no-repeat;
     width: calc(342px/1.5);
     height: calc(69px/1.5); }
-  /* line 526, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 588, /Users/evanmarshall/new-blog/sass/main.sass */
   #intro {
     text-align: center; }
-  /* line 530, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 592, /Users/evanmarshall/new-blog/sass/main.sass */
   #intro p {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -668,68 +821,68 @@ footer #social {
     -moz-column-rule: 1px solid #b3c2bf;
     -o-column-rule: 1px solid #b3c2bf;
     column-rule: 1px solid #b3c2bf; }
-  /* line 533, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 595, /Users/evanmarshall/new-blog/sass/main.sass */
   .mobile {
     display: block;
     visibility: visible; }
-  /* line 537, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 599, /Users/evanmarshall/new-blog/sass/main.sass */
   .desktop {
     display: none;
     visibility: hidden; }
-  /* line 541, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 603, /Users/evanmarshall/new-blog/sass/main.sass */
   .flex-item {
     box-shadow: none; }
-  /* line 544, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 606, /Users/evanmarshall/new-blog/sass/main.sass */
   #contact-wrap {
     width: 100%; }
-  /* line 547, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 609, /Users/evanmarshall/new-blog/sass/main.sass */
   input[type="submit"], input[type="reset"] {
     width: 100%;
     display: block;
     margin: 0;
     margin-bottom: 10px; }
-  /* line 553, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 615, /Users/evanmarshall/new-blog/sass/main.sass */
   footer {
     padding: 20px 0 80px 0;
     text-align: center; }
-  /* line 558, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 620, /Users/evanmarshall/new-blog/sass/main.sass */
   footer div {
     display: block; }
-  /* line 562, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 624, /Users/evanmarshall/new-blog/sass/main.sass */
   footer #top {
     margin: 0;
     padding-bottom: 20px; }
-  /* line 567, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 629, /Users/evanmarshall/new-blog/sass/main.sass */
   footer #copyright {
     display: none;
     visibility: hidden; }
-  /* line 572, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 634, /Users/evanmarshall/new-blog/sass/main.sass */
   footer #social-mobile {
     float: none;
     position: static; }
-  /* line 576, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 638, /Users/evanmarshall/new-blog/sass/main.sass */
   body {
     padding-bottom: 100px; }
-  /* line 579, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 641, /Users/evanmarshall/new-blog/sass/main.sass */
   .ad {
     padding: 0; } }
 
 @media only screen and (min-width: 551px) and (max-width: 900px) {
-  /* line 584, /Users/evanmarshall/new-blog/sass/main.sass */
-  #hero-text {
+  /* line 646, /Users/evanmarshall/new-blog/sass/main.sass */
+  .hero-text {
     padding: 500px 20px;
     max-width: 100%;
     position: static;
     width: 342px; }
-  /* line 591, /Users/evanmarshall/new-blog/sass/main.sass */
-  #hero h1 {
+  /* line 653, /Users/evanmarshall/new-blog/sass/main.sass */
+  .hero h1 {
     background-repeat: no-repeat;
     width: 342px;
     height: 69px; }
-  /* line 596, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 658, /Users/evanmarshall/new-blog/sass/main.sass */
   #intro {
     text-align: left; }
-  /* line 600, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 662, /Users/evanmarshall/new-blog/sass/main.sass */
   #intro p {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -743,16 +896,16 @@ footer #social {
     -moz-column-rule: 1px solid #b3c2bf;
     -o-column-rule: 1px solid #b3c2bf;
     column-rule: 1px solid #b3c2bf; }
-  /* line 604, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 666, /Users/evanmarshall/new-blog/sass/main.sass */
   footer #top {
     text-align: center;
     margin: 0;
     padding-bottom: 40px; }
-  /* line 610, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 672, /Users/evanmarshall/new-blog/sass/main.sass */
   footer #copyright {
     font-size: 0.8em;
     padding-right: 20px; }
-  /* line 614, /Users/evanmarshall/new-blog/sass/main.sass */
+  /* line 676, /Users/evanmarshall/new-blog/sass/main.sass */
   body {
     padding-bottom: 50px; } }
 
