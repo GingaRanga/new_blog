@@ -212,6 +212,27 @@ nav
     height: 100vh
     max-width: 100%
     
+.hero-text
+    width: 25%
+    position: relative
+    right: -65%
+    top: 50%
+    color: #fff
+    text-shadow: $dark-shadow
+    
+.hero 
+    h1
+        /*background-size 100% contains larger images inside width and height */
+        width: 342px
+        height: 69px
+        background-image: url(../img/brand_text.svg)
+        background-size: 100%
+        text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
+    
+.hero 
+    p
+        font-family: Arial, sans-serif
+    
 #hero
     background-image: url(../img/hero.svg)
     +bgImage(25% 40%, fixed, no-repeat, cover)
@@ -275,27 +296,6 @@ nav
 #hero-15
     background-image: url(../img/cn-hero.svg)
     +bgImage(25% 40%, fixed, no-repeat, cover)        
-    
-.hero-text
-    width: 25%
-    position: relative
-    right: -65%
-    top: 50%
-    color: #fff
-    text-shadow: $dark-shadow
-    
-.hero 
-    h1
-        /*background-size 100% contains larger images inside width and height */
-        width: 342px
-        height: 69px
-        background-image: url(../img/brand_text.svg)
-        background-size: 100%
-        text-indent: -9999px /* moves text off screen but keeps it on page for SEO */
-    
-.hero 
-    p
-        font-family: Arial, sans-serif
     
 /* MAIN *****************************************************/
 
@@ -429,6 +429,10 @@ input[type="text"], input[type="email"], textarea
     margin: 0 0 20px
     
 textarea
+    -webkit-resize: vertical
+    -moz-resize: vertical
+    -ms-resize: vertical
+    -o-resize: vertical
     resize: vertical
     
 input[type="submit"], input[type="reset"]
@@ -572,6 +576,70 @@ footer
         float: left
         line-height: 2em
         font-size: 1em
+        
+    #hero
+        background-image: url(../img/hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+        
+    #hero-1
+        background-image: url(../img/announcement-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-2
+        background-image: url(../img/watermelon-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-3
+        background-image: url(../img/peanut-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-4
+        background-image: url(../img/bomb-1-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-5
+        background-image: url(../img/bomb-2-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-6
+        background-image: url(../img/tough-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-7
+        background-image: url(../img/santa-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-8
+        background-image: url(../img/car-seat-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-9
+        background-image: url(../img/pooface-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-10
+        background-image: url(../img/yellow-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-11
+        background-image: url(../img/tx-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-12
+        background-image: url(../img/plane-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-13
+        background-image: url(../img/beads-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-14
+        background-image: url(../img/johnny-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll) 
+
+    #hero-15
+        background-image: url(../img/cn-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)    
     
     .hero-text
         padding: 200px 20px
@@ -643,6 +711,70 @@ footer
         
 @media only screen and (min-width:551px) and (max-width:900px)
     
+    #hero
+        background-image: url(../img/hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+        
+    #hero-1
+        background-image: url(../img/announcement-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-2
+        background-image: url(../img/watermelon-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-3
+        background-image: url(../img/peanut-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-4
+        background-image: url(../img/bomb-1-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-5
+        background-image: url(../img/bomb-2-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-6
+        background-image: url(../img/tough-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-7
+        background-image: url(../img/santa-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-8
+        background-image: url(../img/car-seat-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-9
+        background-image: url(../img/pooface-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-10
+        background-image: url(../img/yellow-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-11
+        background-image: url(../img/tx-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-12
+        background-image: url(../img/plane-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-13
+        background-image: url(../img/beads-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
+    #hero-14
+        background-image: url(../img/johnny-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll) 
+
+    #hero-15
+        background-image: url(../img/cn-hero.svg)
+        +bgImage(25% 40%, fixed, no-repeat, scroll)
+
     .hero-text
         padding: 500px 20px
         max-width: 100%
