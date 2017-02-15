@@ -36,7 +36,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 p {
   font-size: 1.1em; }
@@ -308,6 +310,60 @@ nav {
   right: -65%;
   top: 50%;
   color: #fff;
+  text-shadow: 1px 1px 1px #3b3a36; }
+
+/* BLOG **************************************************** */
+.blog-post {
+  color: #3b3a36;
+  padding: 50px 20px; }
+
+.blog-wrap {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 85%;
+  margin: 0 auto; }
+
+.blog-title {
+  text-align: center;
+  padding: 20px 0; }
+
+.blog-post p {
+  padding: 5px 0; }
+
+.blog-post blockquote {
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto; }
+
+blockquote a:link, blockquote a:visited {
+  text-shadow: 1px 1px 1px #3b3a36;
+  color: #fff;
+  letter-spacing: 2px; }
+
+blockquote a:hover, blockquote a:focus {
+  color: #3b3a36;
+  text-decoration: underline;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+blockquote a:active {
+  color: #c0dfd9;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
   text-shadow: 1px 1px 1px #3b3a36; }
 
 /* MAIN **************************************************** */
@@ -773,3 +829,5 @@ footer #social {
 
   body {
     padding-bottom: 50px; } }
+
+/*# sourceMappingURL=main.css.map */

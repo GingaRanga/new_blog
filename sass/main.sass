@@ -106,6 +106,8 @@ body
     padding-bottom: 60px 
     font-family: $primary-font
     +bSize
+    overflow-x: hidden
+    overflow-y: auto
    
 p
     font-size: 1.1em
@@ -287,6 +289,50 @@ nav
     right: -65%
     top: 50%
     color: #fff
+    text-shadow: $dark-shadow
+
+/* BLOG *****************************************************/
+
+.blog-post
+    color: $dark-color
+    padding: 50px 20px
+    
+.blog-wrap
+    background-color: #fff
+    padding: 20px
+    +borderRad(5px)
+    +bShadowDark
+    width: 85%
+    margin: 0 auto
+
+.blog-title 
+    text-align: center
+    padding: 20px 0
+    
+.blog-post
+    p
+        padding: 5px 0
+        
+.blog-post
+    blockquote
+        padding: 20px
+        width: 85%
+        margin: 0 auto
+        
+blockquote a:link, blockquote a:visited
+    text-shadow: $dark-shadow
+    color: #fff
+    letter-spacing: 2px
+    
+blockquote a:hover, blockquote a:focus
+    color: $dark-color
+    text-decoration: underline
+    +transition(all, 1s)
+        
+blockquote a:active
+    color: $green-color
+    +transformScale 
+    +transition(all, 0.1s)
     text-shadow: $dark-shadow
     
 /* MAIN *****************************************************/

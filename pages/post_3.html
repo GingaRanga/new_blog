@@ -10,7 +10,7 @@
     
     <title>Dr. Sloth</title>
     <!-- INSERT FAVICON -->
-    <link rel="canonical" href="http://www.gigglesnshit.com/pages/blog_3.html">
+    <link rel="canonical" href="http://www.gigglesnshit.com/pages/post_3.html">
     
     <!--
     <link rel="manifest" href="/static/manifest.json">
@@ -61,17 +61,37 @@
                 width: 728px; height: 90px; 
             } 
         }
+        #hero-3 {
+          background-image: url(../img/peanut-hero.svg);
+          background-color: #c0dfd9;
+          background-position: 25% 40%;
+          background-attachment: scroll;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover; 
+        }
+        .hero{
+            height: 100vh;
+            max-width: 100%;
+        }
         .hero-text{
             width: 25%;
             position: relative;
             right: -65%;
             top: 50%;
             color: #fff;
-            text-shadow: $dark-shadow;
+            text-shadow: 1px 1px 1px #3b3a36;
+        }
+        .hero h1 {
+          width: 342px;
+          height: 69px;
+          background-image: url(../img/brand_text.svg);
+          background-size: 100%;
+          text-indent: -9999px; 
         }
     </style>
     <!-- MAKE SURE REMOVE STYLESHEET IN PRODUCTION FOR INTERNAL SHEET -->
-    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     
     <!-- ANALYTICS SCRIPT -->
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -108,7 +128,7 @@
                     "request": "pageview",
                     "vars": {
                         "title": "Homepage",
-                        "ampdocUrl": "http://www.gigglesnshit.com/pages/blog_3.html"
+                        "ampdocUrl": "http://www.gigglesnshit.com/pages/post_3.html"
                     }
                 },
                 "trackClickOnNav": {
@@ -206,12 +226,16 @@
     </header>
     <!-- ADSENSE #1 -->
     <div class="ad">
-        <amp-ad class="responsive-ad" layout="responsive" width="300" height="150" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="7357456062"></amp-ad>
+        <amp-ad class="responsive-ad" layout="responsive" width="250" height="50" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="7357456062"></amp-ad>
     </div>
-    <main id="blog-post">
-        <h2>Dr. Sloth</h2> 
-        <h4>April 5<sup>th</sup>, 2016</h4>
-        <p></p>
+    <main class="blog-post">
+        <div class="blog-wrap">
+            <div class="blog-title">
+                <h2>Dr. Sloth</h2> 
+                <h4>April 5<sup>th</sup>, 2016</h4>
+            </div>
+            <p></p>
+        </div>
         <blockquote>Please Follow Giggles N Shit on <a href="https://twitter.com/gigglesshitblog">Twitter</a>, <a href="https://www.facebook.com/gigglesnshitblog/">Facebook</a> or <a href="https://www.instagram.com/gigglesnshitblog/">Instagram</a> to keep up to date with the latest blog posts and the latest updates of our family story. Don't forget to share with your friends!</blockquote>
     </main>
     <article id="posts"> 
@@ -684,7 +708,7 @@
     </article>
     <!-- ADSENSE #2
     <div class="ad">
-        <amp-ad class="responsive-ad" layout="responsive" width="300" height="150" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="6719400463"></amp-ad>
+        <amp-ad class="responsive-ad" layout="responsive" width="250" height="50" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="6719400463"></amp-ad>
     </div>
     -->
     <!-- FIGURE OUT HOW TO GET LABELS AND INPUTS HIDDEN AFTER SUCCESS AS WELL AS IT WORKING USInG FIELDSET TAG -->
@@ -715,7 +739,7 @@
     </section>
     <!-- ADSENSE #3 -->
     <div class="ad">
-        <amp-ad class="responsive-ad" layout="responsive" width="300" height="150" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="2149600061"></amp-ad>
+        <amp-ad class="responsive-ad" layout="responsive" width="250" height="50" type="adsense" data-ad-client="ca-pub-8526023922334594" data-ad-slot="2149600061"></amp-ad>
     </div>
     <footer>
         <nav>
