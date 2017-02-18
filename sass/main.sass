@@ -161,6 +161,11 @@ nav, header, main, article, aside, section, footer
 img 
     max-width: 100%
     height: auto
+    
+.clearfix:after
+    content: ""
+    display: table
+    clear: both
 
 /* NAV ******************************************************/
 
@@ -312,10 +317,28 @@ nav
     +bShadowDark
     width: 85%
     margin: 0 auto
+    +clearfix
 
 .blog-title 
     text-align: center
     padding: 20px 0
+    
+.blog-table
+    text-align: left
+    margin: 30px auto
+    
+.blog-table tr:hover, .blog-table tr:focus
+    background-color: $grey-color
+    +transition(all, 0.5s)
+    
+.blog-table th
+    border-bottom: 2px solid $grey-color
+    padding: 1px 30px
+    font-weight: bold
+    
+.blog-table td
+    border-bottom: 1px solid $grey-color
+    padding: 5px 10px
     
 .blog-post
     p
@@ -343,6 +366,13 @@ nav
     +bShadowDark
     border: 1px solid $dark-color
     +borderRad(4px)
+    
+#right-img
+    float: right
+    
+#post-float
+    float: left
+    width: 56%
     
 .side-image
     max-width: 100%
@@ -661,21 +691,28 @@ footer
         width: 100% 
         text-align: center
         
-    #side-by-side
+    .side
         float: none
         display: block
         width: 100%
         margin: 0
     
-    #side-image
+    .side-image
         max-width: 100%
         margin: 1%
 
-    #side-caption
+    .side-caption
         margin: 2%
 
-    #side-caption p
+    .side-caption p
         font-size: 0.8em
+        
+    #right-img
+        float: none
+
+    #post-float
+        float: none
+        width: 100%
             
     #intro
         text-align: center

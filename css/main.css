@@ -94,6 +94,11 @@ img {
   max-width: 100%;
   height: auto; }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /* NAV ***************************************************** */
 nav {
   /* to center content in middle of div just make the line height the same as the height of div */
@@ -336,11 +341,33 @@ nav {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 85%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  content: "";
+  display: block;
+  clear: both; }
 
 .blog-title {
   text-align: center;
   padding: 20px 0; }
+
+.blog-table {
+  text-align: left;
+  margin: 30px auto; }
+
+.blog-table tr:hover, .blog-table tr:focus {
+  background-color: #b3c2bf;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.blog-table th {
+  border-bottom: 2px solid #b3c2bf;
+  padding: 1px 30px;
+  font-weight: bold; }
+
+.blog-table td {
+  border-bottom: 1px solid #b3c2bf;
+  padding: 5px 10px; }
 
 .blog-post p {
   padding: 5px 0; }
@@ -375,6 +402,13 @@ nav {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px; }
+
+#right-img {
+  float: right; }
+
+#post-float {
+  float: left;
+  width: 56%; }
 
 .side-image {
   max-width: 100%;
@@ -780,21 +814,28 @@ footer #social {
     width: 100%;
     text-align: center; }
 
-  #side-by-side {
+  .side {
     float: none;
     display: block;
     width: 100%;
     margin: 0; }
 
-  #side-image {
+  .side-image {
     max-width: 100%;
     margin: 1%; }
 
-  #side-caption {
+  .side-caption {
     margin: 2%; }
 
-  #side-caption p {
+  .side-caption p {
     font-size: 0.8em; }
+
+  #right-img {
+    float: none; }
+
+  #post-float {
+    float: none;
+    width: 100%; }
 
   #intro {
     text-align: center; }
