@@ -381,6 +381,7 @@ nav {
 
 .post-link:hover, .post-link:focus {
   text-decoration: underline;
+  color: #3b3a36;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
@@ -767,7 +768,8 @@ footer #social {
     float: right; }
 
   #hamburger {
-    position: fixed; }
+    position: fixed;
+    z-index: 9999; }
 
   #hamburger:hover, #hamburger:focus {
     -webkit-transition: all 1s;

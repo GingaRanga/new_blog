@@ -381,6 +381,7 @@ nav {
 
 .post-link:hover, .post-link:focus {
   text-decoration: underline;
+  color: #3b3a36;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s; }
